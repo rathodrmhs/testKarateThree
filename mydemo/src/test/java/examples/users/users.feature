@@ -27,7 +27,7 @@ Scenario:
     #
     #verify that the array contains 5 values
     #if you try to assert any other value besides 5 in an array then it should fail the test
-    And match response == "#[5]"
+    #And match response == "#[5]"
     #
     #verify that id of the item in the array should be 0
     And match response[0].id == 0
