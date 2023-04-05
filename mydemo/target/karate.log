@@ -1,0 +1,228 @@
+16:30:44.947 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:30:49.062 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:30:50.415 [main] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:80//api/v1/resources/games?id=0
+1 > Host: 127.0.0.1:80
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:30:50.461 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:80 [/127.0.0.1] failed: Connection refused: no further information, http call failed after 1215 milliseconds for url: http://127.0.0.1:80//api/v1/resources/games?id=0
+16:30:50.470 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:8
+When method get
+http call failed after 1215 milliseconds for url: http://127.0.0.1:80//api/v1/resources/games?id=0
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:80 [/127.0.0.1] failed: Connection refused: no further information
+classpath:examples/users/users.feature:8
+16:30:50.593 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:30:50.606 [main] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:80//api/v1/resources/games/all
+1 > Host: 127.0.0.1:80
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:30:50.608 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:80 [/127.0.0.1] failed: Connection refused: no further information, http call failed after 3 milliseconds for url: http://127.0.0.1:80//api/v1/resources/games/all
+16:30:50.608 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:17
+When method get
+http call failed after 3 milliseconds for url: http://127.0.0.1:80//api/v1/resources/games/all
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:80 [/127.0.0.1] failed: Connection refused: no further information
+classpath:examples/users/users.feature:17
+16:30:50.678 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:30:50.782 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:53
+And request read('game.json')
+js failed:
+>>>>
+01: read('game.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\Administrator\eclipse-workspace\mydemo\target\test-classes\examples\users\game.json (The system cannot find the file specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:121)
+- <js>.:program(Unnamed:1)
+
+classpath:examples/users/users.feature:53
+16:30:50.978 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:30:50.989 [main] DEBUG com.intuit.karate - request:
+1 > DELETE http://127.0.0.1:80/api/v1/resources/games?id=5
+1 > Host: 127.0.0.1:80
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:30:50.991 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:80 [/127.0.0.1] failed: Connection refused: no further information, http call failed after 5 milliseconds for url: http://127.0.0.1:80/api/v1/resources/games?id=5
+16:30:50.991 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:62
+When method delete
+http call failed after 5 milliseconds for url: http://127.0.0.1:80/api/v1/resources/games?id=5
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:80 [/127.0.0.1] failed: Connection refused: no further information
+classpath:examples/users/users.feature:62
+16:36:37.191 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:36:41.417 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:36:42.774 [main] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:80//api/v1/resources/games?id=0
+1 > Host: 127.0.0.1:80
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:36:43.333 [main] DEBUG com.intuit.karate - response time in milliseconds: 548
+1 < 200
+1 < Server: Werkzeug/2.2.3 Python/3.11.2
+1 < Date: Wed, 05 Apr 2023 16:36:43 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 263
+1 < Connection: close
+[
+  {
+    "console": "Nintendo Switch",
+    "description": "The Legend of Zelda: Breath of the Wilds sheer freedom and sense of adventure is a remarkable achievement.",
+    "id": 0,
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "year": "2017"
+  }
+]
+
+
+16:36:43.475 [main] INFO  com.intuit.karate - [print] [
+  {
+    "console": "Nintendo Switch",
+    "description": "The Legend of Zelda: Breath of the Wilds sheer freedom and sense of adventure is a remarkable achievement.",
+    "id": 0,
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "year": "2017"
+  }
+]
+ 
+16:36:43.687 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:36:43.693 [main] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:80//api/v1/resources/games/all
+1 > Host: 127.0.0.1:80
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:36:43.721 [main] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 200
+1 < Server: Werkzeug/2.2.3 Python/3.11.2
+1 < Date: Wed, 05 Apr 2023 16:36:43 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 1390
+1 < Connection: close
+[
+  {
+    "console": "Nintendo Switch",
+    "description": "The Legend of Zelda: Breath of the Wilds sheer freedom and sense of adventure is a remarkable achievement.",
+    "id": 0,
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "year": "2017"
+  },
+  {
+    "console": "Nintendo Gameboy",
+    "description": "Tetris is a quintessential problem-solving game, and if you\u2019ve ever played this classic title, you know it\u2019s not as easy as it looks.",
+    "id": 1,
+    "title": "Tetris",
+    "year": "1984"
+  },
+  {
+    "console": "Nintendo 64",
+    "description": "The Legend of Zelda: Ocarina of Time\u2019s approach to letting players explore a 3D world was so consummate and sublime, that it felt less like Nintendo shoehorning eureka concepts into a new paradigm, than the paradigm bending to Nintendo whims.",
+    "id": 2,
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "year": "1998"
+  },
+  {
+    "console": "Nintendo 64",
+    "description": "Mario games are synonymous with fun and innovation, and perhaps Mario 64 is the best example of the latter.",
+    "id": 3,
+    "title": "Super Mario 64",
+    "year": "1996"
+  },
+  {
+    "console": "Nintendo 64",
+    "description": "Red Dead Redemption 2 has sold over 45 million units (not counting individual copies of Red Dead Online.",
+    "id": 4,
+    "title": "Red Dead Redemption 2",
+    "year": "2018"
+  }
+]
+
+
+16:36:43.796 [main] INFO  com.intuit.karate - [print] [
+  {
+    "console": "Nintendo Switch",
+    "description": "The Legend of Zelda: Breath of the Wilds sheer freedom and sense of adventure is a remarkable achievement.",
+    "id": 0,
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "year": "2017"
+  },
+  {
+    "console": "Nintendo Gameboy",
+    "description": "Tetris is a quintessential problem-solving game, and if you\u2019ve ever played this classic title, you know it\u2019s not as easy as it looks.",
+    "id": 1,
+    "title": "Tetris",
+    "year": "1984"
+  },
+  {
+    "console": "Nintendo 64",
+    "description": "The Legend of Zelda: Ocarina of Time\u2019s approach to letting players explore a 3D world was so consummate and sublime, that it felt less like Nintendo shoehorning eureka concepts into a new paradigm, than the paradigm bending to Nintendo whims.",
+    "id": 2,
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "year": "1998"
+  },
+  {
+    "console": "Nintendo 64",
+    "description": "Mario games are synonymous with fun and innovation, and perhaps Mario 64 is the best example of the latter.",
+    "id": 3,
+    "title": "Super Mario 64",
+    "year": "1996"
+  },
+  {
+    "console": "Nintendo 64",
+    "description": "Red Dead Redemption 2 has sold over 45 million units (not counting individual copies of Red Dead Online.",
+    "id": 4,
+    "title": "Red Dead Redemption 2",
+    "year": "2018"
+  }
+]
+ 
+16:36:43.900 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:36:44.007 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:53
+And request read('game.json')
+js failed:
+>>>>
+01: read('game.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\Administrator\eclipse-workspace\mydemo\target\test-classes\examples\users\game.json (The system cannot find the file specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:121)
+- <js>.:program(Unnamed:1)
+
+classpath:examples/users/users.feature:53
+16:36:44.290 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:36:44.300 [main] DEBUG com.intuit.karate - request:
+1 > DELETE http://127.0.0.1:80/api/v1/resources/games?id=5
+1 > Host: 127.0.0.1:80
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:36:44.326 [main] DEBUG com.intuit.karate - response time in milliseconds: 23
+1 < 200
+1 < Server: Werkzeug/2.2.3 Python/3.11.2
+1 < Date: Wed, 05 Apr 2023 16:36:44 GMT
+1 < ContentType: application/json
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 17
+1 < Connection: close
+{"success": true}
+
